@@ -1,0 +1,74 @@
+.feedbackCard {
+    padding: 0.8rem;
+    margin: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #ffffffad;
+}
+
+.feedbackHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.feedbackHeader .customerImage {
+    border-radius: 50%;
+    height: 3.6rem;
+    width: 3.6rem;
+    display: grid;
+    place-content: center;
+    margin-right: 2rem;
+}
+
+.feedbackHeader .customerImage p {
+    font-size: 1.5rem;
+}
+
+.feedbackHeader .customerNameYear p {
+    margin: 0;
+    margin: 0.5rem 0;
+}
+
+.feedbackHeader .customerNameYear p:first-of-type {
+    font-weight: bold;
+}
+
+.feedbackHeader .customerNameYear p:last-of-type {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+
+/* +++++++++++++++++++++++ MEDIA QUERIES +++++++++++++++++++++++ */
+@media screen and (min-width: 900px) {
+    .feedbackCard {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .feedbackCard {
+        padding: 2rem;
+    }
+
+    .feedbackHeader {
+        margin-bottom: 1.7rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .feedbackCard {
+        padding: 1rem;
+    }
+
+    .feedbackHeader {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .feedbackCard {
+        padding: 1.2rem;
+    }
+}

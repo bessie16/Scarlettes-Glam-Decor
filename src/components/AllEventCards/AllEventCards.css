@@ -1,0 +1,39 @@
+.allEventCards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+.cardIcon {
+    color: white;
+    height: 32px;
+    width: 32px;
+}
+
+
+/* +++++++++++++++++++++++ MEDIA QUERIES +++++++++++++++++++++++ */
+@media screen and (min-width: 800px) {
+    .allEventCards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .allEventCards {
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .allEventCards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .allEventCards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

@@ -1,0 +1,28 @@
+footer {
+    margin: 0 0.7rem;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+footer small {
+    display: block;
+    text-align: center;
+    font-weight: 550;
+}
+
+footer small a {
+    text-decoration: none;
+    cursor: pointer;
+    color: darkorange;
+}
+
+footer small a:active {
+    color: palevioletred;
+}
+footer small a:visited {
+    color: palevioletred;
+}
+
+small:first-of-type {
+    margin-bottom: 0.7rem;
+}

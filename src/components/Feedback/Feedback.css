@@ -1,0 +1,23 @@
+.feedbackSection {
+    margin: 0 0.7rem;
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
+
+
+/* +++++++++++++++++++++++ MEDIA QUERIES +++++++++++++++++++++++ */
+@media screen and (min-width: 1200px) {
+    .feedbackSection {
+        margin: 0;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .feedbackSection {
+        margin-bottom: 5rem;
+        width: 70%;
+    }
+}

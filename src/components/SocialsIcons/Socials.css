@@ -1,0 +1,72 @@
+.mediaIconsDiv {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+.iconMedia {
+    height: 4rem;
+    width: 4rem;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+}
+
+.iconMedia:hover {
+    transform: translateY(-0.7rem);
+}
+
+.fbIcon {
+    color: #1777f2;
+}
+
+.tiktokIcon {
+    color: black;
+}
+
+.instagramIcon {
+    color: #fa0ad5;
+}
+
+/* +++++++++++++++++++++++ MEDIA QUERIES +++++++++++++++++++++++ */
+@media screen and (min-width: 600px) {
+    .mediaIconsDiv {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .mediaIconsDiv {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .mediaIconsDiv {
+        width: 35%;
+    }
+
+    .iconMedia {
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
+@media screen and (min-width: 1330px) {
+    .mediaIconsDiv {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .mediaIconsDiv {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .mediaIconsDiv {
+        width: 20%;
+    }
+}

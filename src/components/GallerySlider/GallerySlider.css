@@ -1,0 +1,99 @@
+.gallery {
+    z-index: 10;
+    height: calc(100vh - 3rem);
+    width: 90vw;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    margin: 0;
+    padding: 1rem;
+    position: fixed;
+    background-color: #E6CECA;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.gallery .closeGalleryDiv {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.gallery .closeGalleryDiv .iconClose,
+.gallery .sliderButtons .iconSliders {
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+}
+
+.gallery .sliderButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.gallery .sliderButtons button {
+    border: none;
+    border-radius: 2rem;
+    border: 1px solid #555;
+}
+
+.gallery .imageDiv {
+    padding: 0;
+    margin: 0;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    height: 70%;
+}
+
+.gallery .imageDiv img {
+    height: 100%;
+    width: 100%;
+    /* great trick to fix regular images from stretching */
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.gallery .imgDetails {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+/* +++++++++++++++++++++++ MEDIA QUERIES +++++++++++++++++++++++ */
+@media screen and (min-width: 600px) {
+    .gallery .sliderButtons button {
+        padding: 0.5rem 0.7rem;
+    }
+
+    .gallery {
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .gallery {
+        width: 75vw;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .gallery {
+        padding: 3rem;
+        width: 70vw;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .gallery {
+        width: 60vw;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .gallery {
+        width: 55vw;
+    }
+}

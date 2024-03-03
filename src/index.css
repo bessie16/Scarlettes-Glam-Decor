@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+  background-color: #eee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* +++++++++++++++++++++++ IMAGES BLUR LOAD +++++++++++++++++++++++ */
+.blurredImgDiv::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  animation: pulse 2.5s infinite;
+}
+
+#loadedImg::before,
+#packageLoadedImg::before {
+  content: none;
+  animation: none;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  50% {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+.blurredImgDiv {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#loadedImg>img,
+#packageLoadedImg>img {
+  opacity: 1;
+}
+
+.blurredImgDiv>img {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.red {
+  border: 10px solid green;
+}
